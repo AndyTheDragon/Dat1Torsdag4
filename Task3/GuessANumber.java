@@ -23,8 +23,6 @@ public class GuessANumber {
 		Scanner scan = new Scanner(System.in);
     	// Read user input
 		
-		
-    	
         //use hasNextDouble to check if input is numeric, 
 		if (scan.hasNextInt()) {
 			// if so...

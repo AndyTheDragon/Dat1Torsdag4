@@ -8,6 +8,7 @@ class Main {
 		actions.add("4) End game");
 		GameMenu menu = new GameMenu(actions);
 		int choice = menu.getAction();
+		System.out.println("You chose: " + choice);
 		doAction(choice);
 	}
 	

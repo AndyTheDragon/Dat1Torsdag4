@@ -21,7 +21,7 @@ class GameMenu {
 		Scanner scan = new Scanner(System.in);
 		if (!scan.hasNextInt()) {
 			System.out.println("Wrong input. Please type a number.");
-			getAction();
+			//return getAction();
 		} else {
 			int choice = scan.nextInt();
 			if (choice>0 && choice<=actions.size()) {
@@ -29,9 +29,10 @@ class GameMenu {
 				return choice;
 			}
 			System.out.println("Please choose an action from the list.");
-			getAction();
+			//return getAction();
 		}
-		return 0; //"Something did fucked up. We shouldn't be able to end here.";
+		return getAction();
+		//return -1; //"Something did fucked up. We shouldn't be able to end here.";
 	}
 			
 	
