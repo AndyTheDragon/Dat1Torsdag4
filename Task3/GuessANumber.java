@@ -18,7 +18,7 @@ public class GuessANumber {
 
 
     private static void makeAGuess(){
-		this.attempts++;
+		attempts++;
 		// Create a Scanner object   	 
 		Scanner scan = new Scanner(System.in);
     	// Read user input
