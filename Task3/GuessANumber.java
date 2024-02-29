@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class GuessANumber {
 	private static int rnd_number;
+	private static int attempts = 0; //Tak Mathias for ideen
 
 	
     public static void main(String[] args) {
@@ -17,6 +18,7 @@ public class GuessANumber {
 
 
     private static void makeAGuess(){
+		this.attempts++;
 		// Create a Scanner object   	 
 		Scanner scan = new Scanner(System.in);
     	// Read user input
@@ -32,6 +34,7 @@ public class GuessANumber {
 			if (rnd_number == guess) {
 				//   Let the user know the result of the comparison
 				System.out.println("Congratulations, you guessed correct :)");
+				System.out.println("It took only " + attempts + " tries.");
 			} else {
 				System.out.println("Sorry, "+ guess + " was not the correct number");
 				//   Help the user by revealing wether the guess was lower or higher than the target number
